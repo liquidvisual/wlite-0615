@@ -1,0 +1,32 @@
+- title: Home
+  url: /
+
+- title: About
+  url: /about/
+
+- title: Membership
+  url: /membership/
+  include_children_in_nav: false
+  children:
+    - title: Service One
+      url: /services/service-one/
+    - title: Service Two
+      url: /services/service-two/
+
+- title: Self Care
+  url: /self-care/
+
+- title: "News & Information"
+  url: /news-and-information/
+
+- title: Events
+  url: /events/
+
+- title: Advertising
+  url: /advertising/
+
+#- title: Members Only
+#  url: /members/
+
+- title: Contact Us
+  url: /contact-us/

@@ -1,0 +1,76 @@
+/*
+    HERO.CSS
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Hero
+//-----------------------------------------------------------------
+
+.hero {
+	position: relative;
+	background: #eee;
+	margin: rem-calc(20 0);
+	border-radius: 50px;
+
+	@media #{$medium-up} {
+	    border: 4px solid #E8E8E8;
+	    overflow: hidden;
+	}
+}
+
+.lv-super .bx-viewport[style] {
+	// height: auto !important;
+}
+
+.lv-hero {
+	border-radius: 50px;
+}
+
+.lv-hero .table-wrapper {
+	display: table;
+	width: 100%;
+	height: 100%;
+
+	.table-cell {
+		display: table-cell;
+		vertical-align: middle;
+
+		@media #{$large-up} {
+		    // vertical-align: bottom;
+		}
+	}
+}
+
+.lv-super .slick-dots {
+	position: absolute;
+}
+
+.lv-hero-caption {
+	background: rgba(#677EA7, 0.8);
+	padding: rem-calc(20 30);
+	border-radius: $global-radius*2;
+	z-index: -2;
+	display: table-cell;
+
+	@media #{$medium-up} {
+		background: #677EA7;
+	    border-radius: $global-radius*2 0 0 $global-radius*2;
+	}
+
+	@media #{$large-up} {
+	    position: relative;
+	}
+
+	a {
+		color: $tertiary-color;
+	}
+}
+
+//=========================================
+//
+//=========================================

@@ -1,0 +1,44 @@
+/*
+    STAGE.CSS
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Stage
+//-----------------------------------------------------------------
+
+.global-stage {
+	position: absolute;
+	top: 0;
+	left: $context-menu-width;
+	right: 0;
+	bottom: 0;
+	background: url(../img/template/westlaw-mark.svg) no-repeat center center;
+	background-size: 300px;
+}
+
+//-----------------------------------------------------------------
+// Stage Document
+//-----------------------------------------------------------------
+
+.global-stage-document {
+	background: white;
+	margin: rem-calc(20 20 100 20);
+	padding: rem-calc(30);
+	border-radius: rem-calc(5);
+}
+
+//-----------------------------------------------------------------
+// Stage Typography
+//-----------------------------------------------------------------
+
+.global-stage-document h1 {
+	border-bottom: 1px solid $border-color;
+	margin-bottom: rem-calc(30);
+	padding-bottom: rem-calc(10);
+}
+
+//=========================================
+//
+//=========================================

@@ -1,0 +1,174 @@
+/*
+    NAVIGATION.CSS
+
+    - Last updated: 01.05.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Navigation
+//-----------------------------------------------------------------
+
+.global-navigation {
+	// position: absolute; // locked
+	// width: 100%; // locked
+    // z-index: 1;
+}
+
+// Fixes glitch with MMenu changing viewport widths when scrollbar disappears
+// html.no-touch {
+// 	overflow-y: scroll !important;
+// }
+
+//-----------------------------------------------------------------
+// Topbar
+//-----------------------------------------------------------------
+
+.topbar {
+	// Option to have in flow on medium here
+    // z-index: 100;
+    background: $primary-color;
+}
+
+//=========================================
+// General ULs
+//=========================================
+
+.topbar ul {
+	list-style: none; // locked
+	margin: 0; // locked
+	font-size: rem-calc(14);
+}
+
+//=========================================
+// Visual UL
+//=========================================
+
+.topbar > ul {
+	display: table;
+	width: 100%; // option A (center)
+	// float: right; // option B
+	// background: aqua;
+	// table-layout: fixed;
+
+	> li {
+		// position: relative; // option - depending on dropdown
+		display: table-cell;
+	}
+}
+
+//=========================================
+// Visual Anchors
+//=========================================
+
+.topbar > ul > li > a,
+.topbar > ul > li > .anchor {
+	display: block;
+	line-height: rem-calc(44);
+	padding: rem-calc(0 15);
+    color: white;
+
+	&:hover {
+		background: darken($primary-color, 15%);
+	}
+}
+
+//-----------------------------------------------------------------
+// General Anchors
+//-----------------------------------------------------------------
+
+.topbar a {
+    @include transition('background-color');
+    display: block;
+    text-align: center;
+    // padding: rem-calc(10 15);
+    // color: $body-font-color;
+    color: #404141;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.topbar a:active,
+.topbar .active > a {
+    background: $secondary-color;
+    color: $primary-color;
+}
+
+//=========================================
+// Nested Dropdowns
+//=========================================
+
+.topbar .has-dropdown:hover > a {
+    background: #DCDBDB;
+}
+
+/* UX decision, dropdowns are fiddly on tablets */
+.no-touch .topbar .has-dropdown:hover > .dropdown {
+    opacity: 1;
+    height: auto;
+    overflow: visible;
+}
+
+.no-touch .topbar .dropdown .has-dropdown:hover > .dropdown {
+    opacity: 1;
+    height: auto;
+}
+
+.topbar .dropdown {
+    @include transition('opacity');
+    display: block;
+    position: absolute;
+    opacity: 0;
+    height: 0; // so hit areas aren't triggered
+    overflow: hidden; // so hit areas aren't triggered
+    top: 100%;
+    left: auto;
+    width: rem-calc(220);
+    background: #DCDBDB;
+    margin: 0;
+    padding: rem-calc(16);
+}
+
+.topbar > ul > li:last-child .dropdown {
+    right: 0;
+}
+
+/* Third level nesting */
+.topbar .dropdown .dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.topbar .dropdown li {
+    position: relative;
+    float: none;
+    display: block;
+    margin: 0;
+}
+
+.topbar .dropdown a {
+    border-top: 1px solid #CCCCCC;
+    margin: 0;
+    text-align: left;
+    transition: none;
+    font-size: rem-calc(15);
+}
+
+.topbar .dropdown li:last-child a {
+    // border-bottom: 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.topbar .dropdown a:hover {
+    background: #BFBBBB;
+    // color: white;
+}
+
+//=========================================
+//
+//=========================================

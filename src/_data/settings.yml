@@ -1,0 +1,38 @@
+# GLOBAL SITE SETTINGS
+
+# General
+seo_title: "ASMI - Australian Self Medication Industry"
+title: "ASMI"
+company: "ASMI"
+description: ""
+abn: 55082 798 952
+
+ # Standard Contact
+standard:
+  email: info@asmi.com.au
+  phone: (02) 9922 5111
+  fax: (02) 9959 3693
+
+# Advertising Contact
+advertising:
+  email: ASMIadvertising@asmi.com.au
+  phone: (02) 9955 7205
+  fax: (02) 9957 6204
+
+# Account Enquiries
+accounts:
+  email: accounts@asmi.com.au
+
+office_address: "Level 22, Suite 2202<br> 141 Walker Street<br> North Sydney NSW 2060"
+postal_address: "PO Box 764<br> North Sydney NSW 2059"
+
+# Social Networks
+facebook: ""
+twitter: "https://twitter.com/asminews"
+twitter_handle: "@asminews"
+
+# Google Map
+google_map: ""
+
+# Google Analytics
+google_analytics: "UA-XXXXXXXX-X"

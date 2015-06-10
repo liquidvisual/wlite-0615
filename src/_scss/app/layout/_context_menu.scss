@@ -1,0 +1,179 @@
+/*
+    CONTEXT-MENU.CSS
+
+    - Last updated: 10.06.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+
+$header-height-small: rem-calc(50);
+$header-height-medium: rem-calc(110);
+$border-color: lighten(#B3B3B3, 10%); //#E0E0E0;
+$context-menu-width: rem-calc(400);
+
+//-----------------------------------------------------------------
+// Header
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Context Menu Header
+//-----------------------------------------------------------------
+
+.context-menu-header {
+	position: relative;
+	border-bottom: 1px solid $border-color;
+	height: $header-height-small;
+	line-height: $header-height-small;
+}
+
+//-----------------------------------------------------------------
+// Context Menu
+//-----------------------------------------------------------------
+
+.context-menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: $footer-height;
+	border-right: 1px solid #D4D4D4;
+	background: white;
+	z-index: 1;
+
+	@media #{$medium-up} {
+	    width: $context-menu-width;
+	}
+
+	// -webkit-box-shadow: 11px 0px 10px -5px rgba(0,0,0,0.2);
+	// -moz-box-shadow: 11px 0px 10px -5px rgba(0,0,0,0.2);
+	box-shadow: 11px 0px 10px -5px rgba(0,0,0,0.05);
+}
+
+//-----------------------------------------------------------------
+// Context Menu Fixed (Contents)
+//-----------------------------------------------------------------
+
+.context-menu-fixed {
+	display: table;
+	padding: rem-calc(50 20 20 20);
+	overflow-y: scroll;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: $footer-height;
+	left: 0;
+	height: 100vh;
+}
+
+//-----------------------------------------------------------------
+// Context Menu Search
+//-----------------------------------------------------------------
+
+.context-menu-search {
+	padding-bottom: 60%;
+	vertical-align: middle;
+	display: table-cell;
+
+	@media #{$medium-up} {
+	    padding-bottom: 30%;
+	}
+}
+
+.context-menu-search-form {
+	input {
+		border: 1px solid #547B9D;
+		background: #EBF2F8 url(../img/ui/search-icon.svg) 98% center no-repeat;
+		background-size: 25px;
+	}
+}
+
+//-----------------------------------------------------------------
+// Logo
+//-----------------------------------------------------------------
+
+.context-menu-header .logo {
+	padding: rem-calc(0 10);
+
+	.logo-text {
+		font-size: rem-calc(13);
+		color: #222;
+		font-weight: 600;
+		line-height: 38px;
+	}
+}
+
+//=========================================
+// Mobile Menu
+//=========================================
+
+.context-menu-mobile-menu {
+	position: absolute;
+	// top: 0;
+	// bottom: 0;
+	right: 20px;
+
+	// z-index: 9999999;
+	// // bottom: 20px;
+	// right: 15px;
+	top: calc(50% - 2px); // to account for top margins of H1s
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+//=========================================
+// Hamburger
+//=========================================
+
+.hamburger {
+	@include hamburger($width: 22px, $gap: 5px, $thickness: 3px, $color: #211F20);
+
+	@media #{$medium-up} {
+		// @include hamburger($width: 28px, $gap: 6px, $thickness: 5px, $color: #211F20);
+	}
+}
+
+//-----------------------------------------------------------------
+// Context Menu Buttons
+//-----------------------------------------------------------------
+
+.context-menu-btn-wrapper {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid $border-color;
+	z-index: 1;
+
+	.context-menu-btn {
+		@include transition();
+		display: inline-block;
+		width: rem-calc(40);
+		height: rem-calc(40);
+		line-height: rem-calc(40);
+		border-right: 1px solid $border-color;
+		color: #B3B3B3;
+		text-align: center;
+		cursor: pointer;
+
+		i {
+			font-size: rem-calc(20);
+		}
+
+		&:hover i {
+			color: #547B9D;
+		}
+	}
+}
+
+// .context-menu-btn {
+// 	// background: red;
+// 	position: absolute;
+// 	bottom: 0;
+// 	width: rem-calc(40);
+// 	height: rem-calc(40);
+// }
+
+//=========================================
+//
+//=========================================

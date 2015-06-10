@@ -1,0 +1,112 @@
+/*
+    HEADER.CSS
+
+    - Last updated: 15.05.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+
+$header-height-small: rem-calc(50);
+$header-height-medium: rem-calc(110);
+
+//-----------------------------------------------------------------
+// Header
+//-----------------------------------------------------------------
+
+.global-header {
+	position: relative; // for hamburger
+	height: $header-height-small;
+	overflow: hidden;
+	background: white;
+	border-bottom: 2px solid $primary-color;
+
+	@media #{$medium-up} {
+	    height: $header-height-medium;
+	    border: 0;
+	}
+
+	.outer-row {
+		padding-top: rem-calc(10);
+
+		@media #{$medium-up} {
+			padding-top: rem-calc(15);
+		}
+	}
+
+	.search-form input {
+		background: url(../img/ui/search-icon.svg) no-repeat 96% center;
+		background-size: 20px;
+	}
+
+	.button {
+		padding: rem-calc(20 15 10 15);
+		position: relative;
+		top: -25px;
+		font-size: rem-calc(10);
+		font-weight: bold;
+		background: lighten($primary-color, 15%);
+		margin-bottom: 0;
+	}
+
+	.global-header-tagline {
+		font-size: rem-calc(16);
+		font-style: italic;
+		font-weight: 600;
+		color: grey;
+	}
+}
+
+//-----------------------------------------------------------------
+// Logo
+//-----------------------------------------------------------------
+
+.global-header .logo {
+
+	img {
+		width: rem-calc(200);
+
+		@media #{$medium-up} {
+		    width: rem-calc(420);
+		}
+	}
+}
+
+//=========================================
+// Mobile Menu
+//=========================================
+
+.global-header-mobile-menu {
+	position: absolute;
+	// top: rem-calc(40);
+	right: rem-calc(15);
+
+	@media #{$medium-up} {
+		right: rem-calc(40);
+	}
+
+	// z-index: 9999999;
+	// // bottom: 20px;
+	// right: 15px;
+	top: calc(50% - 2px); // to account for top margins of H1s
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+//=========================================
+// Hamburger
+//=========================================
+
+.hamburger {
+	@include hamburger($width: 24px, $gap: 5px, $thickness: 4px, $color: #211F20);
+
+	@media #{$medium-up} {
+		@include hamburger($width: 28px, $gap: 6px, $thickness: 5px, $color: #211F20);
+	}
+}
+
+//=========================================
+//
+//=========================================
