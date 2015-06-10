@@ -10,9 +10,6 @@ $header-height-medium: rem-calc(110);
 $context-menu-width: rem-calc(400);
 
 //-----------------------------------------------------------------
-// Header
-//-----------------------------------------------------------------
-//-----------------------------------------------------------------
 // Context Menu Header
 //-----------------------------------------------------------------
 
@@ -21,6 +18,7 @@ $context-menu-width: rem-calc(400);
 	border-bottom: 1px solid $border-color;
 	height: $header-height-small;
 	line-height: $header-height-small;
+	z-index: 10;
 }
 
 //-----------------------------------------------------------------
@@ -30,20 +28,19 @@ $context-menu-width: rem-calc(400);
 .context-menu {
 	position: fixed;
 	top: 0;
-	right: 0;
 	left: 0;
-	bottom: $footer-height;
+	right: 0;
+	width: 100%;
+	bottom: 0;
 	border-right: 1px solid #D4D4D4;
 	background: white;
 	z-index: 1;
+	box-shadow: 11px 0px 10px -5px rgba(0,0,0,0.05);
 
 	@media #{$medium-up} {
 	    width: $context-menu-width;
+	    bottom: $footer-height;
 	}
-
-	// -webkit-box-shadow: 11px 0px 10px -5px rgba(0,0,0,0.2);
-	// -moz-box-shadow: 11px 0px 10px -5px rgba(0,0,0,0.2);
-	box-shadow: 11px 0px 10px -5px rgba(0,0,0,0.05);
 }
 
 //-----------------------------------------------------------------
@@ -59,6 +56,7 @@ $context-menu-width: rem-calc(400);
 	right: 0;
 	bottom: $footer-height;
 	left: 0;
+	width: 100%;
 	height: 100vh;
 }
 
@@ -72,15 +70,16 @@ $context-menu-width: rem-calc(400);
 	display: table-cell;
 
 	@media #{$medium-up} {
-	    padding-bottom: 30%;
+	    padding-bottom: 90%;
 	}
 }
 
 .context-menu-search-form {
 	input {
 		border: 1px solid #547B9D;
-		background: #EBF2F8 url(../img/ui/search-icon.svg) 98% center no-repeat;
+		background: #EBF2F8 url(../img/ui/search-icon-right.svg) 2% center no-repeat;
 		background-size: 25px;
+		padding: rem-calc(20);
 	}
 }
 
@@ -128,6 +127,8 @@ $context-menu-width: rem-calc(400);
 	@media #{$medium-up} {
 		// @include hamburger($width: 28px, $gap: 6px, $thickness: 5px, $color: #211F20);
 	}
+
+	z-index: 9999;
 }
 
 //-----------------------------------------------------------------
@@ -138,22 +139,23 @@ $context-menu-width: rem-calc(400);
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	border-top: 1px solid $border-color;
+	border-top: 1px solid #E0E0E0; //$border-color;
+	box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.05);
 	z-index: 1;
 
 	.context-menu-btn {
 		@include transition();
 		display: inline-block;
-		width: rem-calc(40);
-		height: rem-calc(40);
-		line-height: rem-calc(40);
-		border-right: 1px solid $border-color;
+		width: rem-calc(45);
+		height: rem-calc(45);
+		line-height: rem-calc(45);
+		border-right: 1px solid #E0E0E0; //$border-color;
 		color: #B3B3B3;
 		text-align: center;
 		cursor: pointer;
 
 		i {
-			font-size: rem-calc(20);
+			font-size: rem-calc(22);
 		}
 
 		&:hover i {

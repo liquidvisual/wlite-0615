@@ -5,20 +5,26 @@
 // Variables
 //-----------------------------------------------------------------
 
-$footer-height: rem-calc(30);
+$footer-height: rem-calc(35);
 
 //-----------------------------------------------------------------
 // Footer
 //-----------------------------------------------------------------
 
 .global-footer {
-	background: #2C2C2C;
-	height: $footer-height;
+	display: none;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	color: white;
 	padding: rem-calc(0 15);
+	background: #2C2C2C;
+	height: $footer-height;
+	color: white;
+	z-index: 1;
+
+	@media #{$medium-up} {
+	    display: block;
+	}
 
 	p, a {
 		font-size: rem-calc(11);

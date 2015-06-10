@@ -9,14 +9,50 @@
 //-----------------------------------------------------------------
 
 .result-entry {
+	@include transition('background-color');
 	border-bottom: 1px solid $border-color;
-	padding: rem-calc(15 0 15 0);
+	padding: rem-calc(20 0);
+
+	&:hover {
+		@media #{$large-up} {
+		    background: rgba($primary-color, 0.08);
+		}
+	}
 
 	p {
 		margin-bottom: 0;
 	}
+
+	.read-more {
+		font-weight: bold;
+		color: $secondary-color;
+		font-size: rem-calc(10);
+		text-transform: uppercase;
+	}
 }
 
+//-----------------------------------------------------------------
+// Result Tile
+//-----------------------------------------------------------------
+
+.result-tile {
+	display: inline-block;
+	background: white;
+	padding: rem-calc(20);
+	margin: rem-calc(0);
+	border-top: 3px solid $primary-color;
+
+	img {
+		margin-bottom: rem-calc(15);
+	}
+
+	.read-more {
+		font-weight: bold;
+		color: $secondary-color;
+		font-size: rem-calc(10);
+		text-transform: uppercase;
+	}
+}
 
 //=========================================
 //

@@ -18,3 +18,13 @@
 //=========================================
 //
 //=========================================
+
+/* What gives, Webkit?! */
+.lv-super .accordion,
+.lv-super .accordion *,
+.lv-super .accordion a,
+.lv-super .tabs a,
+.lv-super .tabs-content .content ,
+.lv-super .tabs-content .content * {
+    outline: none !important;
+}

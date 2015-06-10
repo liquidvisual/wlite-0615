@@ -96,8 +96,8 @@ $font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial
 // $font-weight-bold: bold !default;
 
 // We use these as default colors throughout
-$primary-color: #034891; //#2D3C82;
-$secondary-color: #D2EE5D;
+$primary-color: #1C78A7; //#1B6084; //#2D3C82;
+$secondary-color: #FB8023;
 $tertiary-color: #FED55F;
 
 // $alert-color: #f04124;
@@ -153,11 +153,11 @@ $global-radius: 5px;
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$small-range: (0em, 40em);            // 640
-$medium-range: (40.063em, 61.250em);  // 641-980
-$large-range: (61.313em, 64em);       // 981-1024
-$xlarge-range: (64.063em, 73.125em);  // 1281-1440
-$xxlarge-range: (73.177em);           // 1441+
+$small-range: (0em, 40em); /* 0, 640px */
+$medium-range: (40.063em, 64em); /* 641px, 1024px */
+$large-range: (64.063em, 80em); /* 1025px, 1280px */
+$xlarge-range: (80.063em, 90em); /* 1281px, 1440px */
+$xxlarge-range: (90.063em); /* 1441px */
 
 $screen: "only screen";
 

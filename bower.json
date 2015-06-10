@@ -8,6 +8,7 @@
     "foundation": "zurb/bower-foundation#5.5.1",
     "foundation-icon-fonts": "zurb/foundation-icon-fonts",
     "isotope": "~2.1.0",
+    "jquery.transit": "~0.9.12",
     "jQuery.mmenu": "~4.7.4",
     "jquery.scrollTo": "~1.4.12",
     "jquery.transit": "~0.9.12",

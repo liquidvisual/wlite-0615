@@ -8,7 +8,40 @@
 // Document
 //-----------------------------------------------------------------
 
+.global-stage-document {
+	background: white;
+	margin: 20px auto;
+	padding: rem-calc(30);
+	border-radius: rem-calc(5);
+	overflow: hidden; // necessary
+	max-width: rem-calc(1040);
+	border-top: 25px solid $primary-color;
+}
 
+//-----------------------------------------------------------------
+// Stage Typography
+//-----------------------------------------------------------------
+
+.global-stage-document h1 {
+	border-bottom: 1px solid $border-color;
+	margin-bottom: rem-calc(30);
+	padding-bottom: rem-calc(10);
+}
+
+.document {
+	h1 {
+		margin-bottom: 0;
+		border-bottom: 0;
+	}
+
+	date {
+		display: block;
+		color: grey;
+		border-bottom: 1px solid $border-color;
+		padding-bottom: rem-calc(10);
+		margin-bottom: rem-calc(30);
+	}
+}
 
 //=========================================
 //

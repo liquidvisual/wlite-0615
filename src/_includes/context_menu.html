@@ -1,7 +1,7 @@
 <header class="context-menu-header">
 
     <!-- Logo -->
-    <a class="logo" href="#home" title="Westlaw Lite" itemprop="url">
+    <a class="logo" href="/" title="Westlaw Lite" itemprop="url">
         <img width="38" src="/img/content/logo@2x.png" alt="Westlaw Lite" itemprop="logo">
         <span class="logo-text">Westlaw Lite</span>
     </a>
@@ -24,13 +24,15 @@
 <!-- Context Menu Fixed -->
 <section class="context-menu-fixed">
     <div class="context-menu-search">
-        <h4>Quick Search</h4>
-        <p>Welcome to Westlaw Lite, start by entering a <strong>quick search</strong>.</p>
+
+        {{ include.body }}
 
         <!-- Search Field -->
         <form class="context-menu-search-form" novalidate method="post" action="">
-            <label><input name="Search" type="text" placeholder="Search"></label>
+            <label><input name="Search" type="text"></label>
         </form>
+
+        <p><small>Dev link: <a href="/results/">JUMP TO RESULTS</a></small></p>
 
     </div>
 </section>

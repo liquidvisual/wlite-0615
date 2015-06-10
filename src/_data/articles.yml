@@ -1,0 +1,98 @@
+# Used to populate fake entries on the Homepage
+
+- title: "That's Pie Country. They Do a Lot of Baking Up There."
+  date: 02 September 2014
+  image: "http://lorempixel.com/300/200/business?1"
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
+
+    aecati odit, accusamus. At libero ipsam consectetur, iusto autem non excepturi doloribus voluptas architecto dolorum fugiat esse necessitatibus placeat, incidunt ipsum quisquam deleniti fugit aliquid numquam quas rem commodi nobis officia veritatis animi! Dolorum deserunt laborum nobis dolor voluptate a eaque rerum omnis sequi quaerat non accusantium nisi, commodi molestias, adipisci impedit neque dignissimos? Laudantium a hic aut explicabo consequuntur! Voluptas ab nesciunt aperiam nisi eligendi saepe, dolor illum id, necessitatibus, labore inventore!
+
+- title: "What's the Deal with Airline Peanuts?"
+  date: 04 October 2014
+  image: "http://lorempixel.com/300/200/business?2"
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
+
+    aecati odit, accusamus. At libero ipsam consectetur, iusto autem non excepturi doloribus voluptas architecto dolorum fugiat esse necessitatibus placeat, incidunt ipsum quisquam deleniti fugit aliquid numquam quas rem commodi nobis officia veritatis animi! Dolorum deserunt laborum nobis dolor voluptate a eaque rerum omnis sequi quaerat non accusantium nisi, commodi molestias, adipisci impedit neque dignissimos? Laudantium a hic aut explicabo consequuntur! Voluptas ab nesciunt aperiam nisi eligendi saepe, dolor illum id, necessitatibus, labore inventore!
+
+- title: "Nothing's Finer Than Being in Your Diner"
+  date: 21 November 2014
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
+
+- title: "Yadda Yadda Yadda"
+  date: 21 July 2014
+  image: "http://lorempixel.com/300/200/business?3"
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
+
+- title: "You know what they say, ‘You don’t sell the steak, you sell the sizzle.’"
+  date: 21 July 2014
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
+
+- title: "She’s one of those low-talkers. You can’t hear a word she’s saying! You’re always going ‘excuse me’, what was that?"
+  date: 21 July 2014
+  image: "http://lorempixel.com/300/200/business?4"
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
+
+- title: "I'm a US postal worker and my mail truck was just ambushed by a band of backwoods mail-hating survivalists"
+  date: 21 July 2014
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
+
+- title: "You’re becoming one of the glitterati. What’s that? People who glitter."
+  date: 21 July 2014
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
+
+- title: "That's Pie Country. They Do a Lot of Baking Up There."
+  date: 02 September 2014
+  image: "http://lorempixel.com/300/200/business?1"
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
+
+    aecati odit, accusamus. At libero ipsam consectetur, iusto autem non excepturi doloribus voluptas architecto dolorum fugiat esse necessitatibus placeat, incidunt ipsum quisquam deleniti fugit aliquid numquam quas rem commodi nobis officia veritatis animi! Dolorum deserunt laborum nobis dolor voluptate a eaque rerum omnis sequi quaerat non accusantium nisi, commodi molestias, adipisci impedit neque dignissimos? Laudantium a hic aut explicabo consequuntur! Voluptas ab nesciunt aperiam nisi eligendi saepe, dolor illum id, necessitatibus, labore inventore!
+
+- title: "What's the Deal with Airline Peanuts?"
+  date: 04 October 2014
+  image: "http://lorempixel.com/300/200/business?2"
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
+
+    aecati odit, accusamus. At libero ipsam consectetur, iusto autem non excepturi doloribus voluptas architecto dolorum fugiat esse necessitatibus placeat, incidunt ipsum quisquam deleniti fugit aliquid numquam quas rem commodi nobis officia veritatis animi! Dolorum deserunt laborum nobis dolor voluptate a eaque rerum omnis sequi quaerat non accusantium nisi, commodi molestias, adipisci impedit neque dignissimos? Laudantium a hic aut explicabo consequuntur! Voluptas ab nesciunt aperiam nisi eligendi saepe, dolor illum id, necessitatibus, labore inventore!
+
+- title: "Nothing's Finer Than Being in Your Diner"
+  date: 21 November 2014
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
+
+- title: "Yadda Yadda Yadda"
+  date: 21 July 2014
+  image: "http://lorempixel.com/300/200/business?3"
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
+
+- title: "You know what they say, ‘You don’t sell the steak, you sell the sizzle.’"
+  date: 21 July 2014
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
+
+- title: "She’s one of those low-talkers. You can’t hear a word she’s saying! You’re always going ‘excuse me’, what was that?"
+  date: 21 July 2014
+  image: "http://lorempixel.com/300/200/business?4"
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
+
+- title: "I'm a US postal worker and my mail truck was just ambushed by a band of backwoods mail-hating survivalists"
+  date: 21 July 2014
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
+
+- title: "You’re becoming one of the glitterati. What’s that? People who glitter."
+  date: 21 July 2014
+  image: "http://lorempixel.com/300/200/business?5"
+  body: |
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!

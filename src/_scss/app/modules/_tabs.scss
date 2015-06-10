@@ -11,7 +11,31 @@
 // Tabs
 //-----------------------------------------------------------------
 
+.lv-super .tabs {
+	display: table;
+	width: 90%;
+	max-width: rem-calc(500);
+	// border: 2px solid $primary-color;
 
+
+	@media #{$medium-up} {
+	    margin: 15px auto 0 auto;
+	}
+
+
+	dd {
+		display: table-cell;
+		float: none;
+		text-align: center;
+
+		a {
+			// background: none;
+			padding: rem-calc(10);
+			border-radius: $global-radius;
+			margin: 2px;
+		}
+	}
+}
 
 //=========================================
 //

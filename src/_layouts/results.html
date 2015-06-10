@@ -1,0 +1,38 @@
+---
+layout: master
+---
+
+{% assign articles = site.data.articles %}
+
+{% capture body %}
+	<h2>Search Again</h2>
+	<p>Your search is complete with <strong>X</strong> results for <em>"These pretzels are making me thirsty"</em></p>
+{% endcapture %}
+
+<!-- CONTEXT MENU -->
+<nav class="context-menu">
+	{% include context_menu.html body=body %}
+</nav>
+
+<!-- GLOBAL STAGE -->
+<section class="global-stage">
+	<div class="global-stage-document">
+		<h1>Search Results</h1>
+		<p><a href="/"><i class="fi-arrow-left"></i>&nbsp; Back to News</a></p>
+
+		{% for item in articles %}
+			<a href="/document/">
+				<article class="result-entry">
+					<h2>{{ item.title }}</h2>
+					<p>{{ item.body | truncate: 100 }} <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
+				</article>
+			</a>
+		{% endfor %}
+
+	</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="global-footer">
+    {% include footer.html %}
+</footer>
