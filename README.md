@@ -1,9 +1,9 @@
-asmi-0515
+wlite-0615
 =============================
 
 ## To Run
 
-    git clone git@github.com:liquidvisual/URL-GOES-HERE.git
+    git clone git@github.com:liquidvisual/wlite.git
     bundle install
     npm install
     bower install
