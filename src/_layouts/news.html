@@ -1,0 +1,70 @@
+---
+layout: master
+---
+
+{% assign articles = site.data.articles %}
+
+{% capture body %}
+	<h2>Quick Search</h2>
+	<p>Welcome to Westlaw Lite, start by entering a <strong>quick search</strong>.</p>
+{% endcapture %}
+
+<!-- CONTEXT MENU -->
+<nav class="context-menu">
+	{% include context_menu.html body=body %}
+</nav>
+
+<!-- GLOBAL STAGE -->
+<section class="global-stage">
+
+	<!-- Tabs -->
+	<dl class="tabs" data-tab>
+	    <dd class="active"><a href="#panel1"><i class="fi-results"></i>&nbsp; News Feed</a></dd>
+	    <dd><a href="#panel2"><i class="fi-like"></i>&nbsp; Fancy Feed</a></dd>
+	</dl>
+
+	<!-- Tabs Content -->
+	<div class="tabs-content">
+	    <div class="content active" id="panel1">
+
+			<ul class="result-tiles small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+	        {% for item in articles %}
+	        <li>
+	        	<a href="/document/">
+	        		<article class="result-tile">
+	        			{% if item.image %}
+	        			    <img src="{{ item.image }}" alt="{{ item.title }}">
+	        			{% endif %}
+	        			<h2>{{ item.title }}</h2>
+	        			<p>{{ item.body | truncate: 100 }} <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
+	        		</article>
+	        	</a>
+	        </li>
+	        {% endfor %}
+	        </ul>
+
+	    </div>
+	    <div class="content" id="panel2">
+
+			<!-- Stage Document -->
+			<div class="global-stage-document">
+				<h1>Today's Headlines</h1>
+
+				{% for item in articles %}
+					<a href="/document/">
+						<article class="result-entry">
+							<h2>{{ item.title }}</h2>
+							<p>{{ item.body | truncate: 100 }} <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
+						</article>
+					</a>
+				{% endfor %}
+			</div>
+
+	    </div>
+	</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="global-footer">
+    {% include footer.html %}
+</footer>
