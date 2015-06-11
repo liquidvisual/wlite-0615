@@ -13,7 +13,7 @@
     <!-- Google Fonts CDN -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700">
 
-    <link rel="stylesheet" href="/assets/css/minified.bdc9.css">
+    <link rel="stylesheet" href="/assets/css/minified.fe86.css">
 
     <!-- Priority Scripts -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
@@ -30,382 +30,105 @@
 
             
 
+<style>
+	.login-panel {
+		background: white;
+		padding: 0 20px 20px 20px;
+		border-radius: 5px;
+	}
 
+	@media (min-width: 641px) {
+		.login-panel {
+			width: 400px;
+			margin: 20px auto 0 auto;
+		}
+	}
 
-<!-- CONTEXT MENU -->
-<nav class="context-menu">
-	<header class="context-menu-header">
+	.forgot-password {
+		font-size: 14px;
+	}
 
-    <!-- Logo -->
-    <a class="logo" href="/" title="Westlaw Lite" itemprop="url">
-        <img width="38" src="/assets/img/content/logo@2x.6717.png" alt="Westlaw Lite" itemprop="logo">
-        <span class="logo-text">Westlaw Lite</span>
-    </a>
+	.label-text {
+		display: block;
+		padding-bottom: 10px;
+		font-size: 14px;
+	}
+</style>
 
-    <!-- Hide/Show Button -->
-    <div class="js-mobile-toggle-btn context-menu-mobile-menu">
-        <a href=""><i class="fi-web"></i></a>
-    </div>
+<section class="login-panel">
 
-</header>
-
-<div class="context-menu-slider">
-
-    <!-- Preferences Button -->
-    <div class="context-menu-btn-wrapper">
-        <a class="context-menu-btn" title="Preferences" href="#"><i class="fi-widget"></i></a>
-        <a class="context-menu-btn" title="Other" href="#"><i class="fi-torso"></i></a>
-    </div>
-
-    <!-- Context Menu Fixed -->
-    <section class="context-menu-fixed">
-        <div class="context-menu-search">
-
-            
-	<h2>Quick Search</h2>
-	<p>Welcome to Westlaw Lite, start by entering a <strong>quick search</strong>.</p>
-
-
-            <!-- Search Field -->
-            <form class="context-menu-search-form" novalidate method="post" action="">
-                <label><input name="Search" type="text"></label>
-            </form>
-
-            <p><small>Dev link: <a href="/results/">JUMP TO RESULTS</a></small></p>
-
-        </div>
-    </section>
-
-</div> <!-- .context-menu-slider -->
-</nav>
-
-<!-- GLOBAL STAGE -->
-<section class="global-stage">
-
-	<!-- Tabs -->
-	<dl class="tabs" data-tab>
-	    <dd class="active"><a href="#panel1"><i class="fi-results"></i>&nbsp; News Feed</a></dd>
-	    <dd><a href="#panel2"><i class="fi-like"></i>&nbsp; Fancy Feed</a></dd>
-	</dl>
-
-	<!-- Tabs Content -->
-	<div class="tabs-content">
-	    <div class="content active" id="panel1">
-
-			<!-- Stage Document -->
-			<div class="global-stage-document">
-				<h1>Today's Headlines</h1>
-
-				
-					<a href="/document/">
-						<article class="result-entry">
-							<h2>That's Pie Country. They Do a Lot of Baking Up There.</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-						</article>
-					</a>
-				
-					<a href="/document/">
-						<article class="result-entry">
-							<h2>What's the Deal with Airline Peanuts?</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-						</article>
-					</a>
-				
-					<a href="/document/">
-						<article class="result-entry">
-							<h2>Nothing's Finer Than Being in Your Diner</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-						</article>
-					</a>
-				
-					<a href="/document/">
-						<article class="result-entry">
-							<h2>Yadda Yadda Yadda</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-						</article>
-					</a>
-				
-					<a href="/document/">
-						<article class="result-entry">
-							<h2>You know what they say, ‘You don’t sell the steak, you sell the sizzle.’</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-						</article>
-					</a>
-				
-					<a href="/document/">
-						<article class="result-entry">
-							<h2>She’s one of those low-talkers. You can’t hear a word she’s saying! You’re always going ‘excuse me’, what was that?</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-						</article>
-					</a>
-				
-					<a href="/document/">
-						<article class="result-entry">
-							<h2>I'm a US postal worker and my mail truck was just ambushed by a band of backwoods mail-hating survivalists</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-						</article>
-					</a>
-				
-					<a href="/document/">
-						<article class="result-entry">
-							<h2>You’re becoming one of the glitterati. What’s that? People who glitter.</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-						</article>
-					</a>
-				
-					<a href="/document/">
-						<article class="result-entry">
-							<h2>That's Pie Country. They Do a Lot of Baking Up There.</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-						</article>
-					</a>
-				
-					<a href="/document/">
-						<article class="result-entry">
-							<h2>What's the Deal with Airline Peanuts?</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-						</article>
-					</a>
-				
-					<a href="/document/">
-						<article class="result-entry">
-							<h2>Nothing's Finer Than Being in Your Diner</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-						</article>
-					</a>
-				
-					<a href="/document/">
-						<article class="result-entry">
-							<h2>Yadda Yadda Yadda</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-						</article>
-					</a>
-				
-					<a href="/document/">
-						<article class="result-entry">
-							<h2>You know what they say, ‘You don’t sell the steak, you sell the sizzle.’</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-						</article>
-					</a>
-				
-					<a href="/document/">
-						<article class="result-entry">
-							<h2>She’s one of those low-talkers. You can’t hear a word she’s saying! You’re always going ‘excuse me’, what was that?</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-						</article>
-					</a>
-				
-					<a href="/document/">
-						<article class="result-entry">
-							<h2>I'm a US postal worker and my mail truck was just ambushed by a band of backwoods mail-hating survivalists</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-						</article>
-					</a>
-				
-					<a href="/document/">
-						<article class="result-entry">
-							<h2>You’re becoming one of the glitterati. What’s that? People who glitter.</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-						</article>
-					</a>
-				
+	<!-- HEADER -->
+	<header class="lv-login-header">
+		<div class="row">
+			<div class="columns text-center">
+				<img src="/assets/img/content/logo@2x.6717.png">
+				<h1 class="subheader">Westlaw Lite</h1>
 			</div>
+		</div>
+	</header>
 
-	    </div>
-	    <div class="content" id="panel2">
+	<br>
 
-			<ul class="result-tiles small-block-grid-1 medium-block-grid-2 large-block-grid-4">
-	        
-	        <li>
-	        	<a href="/document/">
-	        		<article class="result-tile">
-	        			
-	        			    <img src="http://lorempixel.com/300/200/business?1" alt="That's Pie Country. They Do a Lot of Baking Up There.">
-	        			
-	        			<h2>That's Pie Country. They Do a Lot of Baking Up There.</h2>
-	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-	        		</article>
-	        	</a>
-	        </li>
-	        
-	        <li>
-	        	<a href="/document/">
-	        		<article class="result-tile">
-	        			
-	        			    <img src="http://lorempixel.com/300/200/business?2" alt="What's the Deal with Airline Peanuts?">
-	        			
-	        			<h2>What's the Deal with Airline Peanuts?</h2>
-	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-	        		</article>
-	        	</a>
-	        </li>
-	        
-	        <li>
-	        	<a href="/document/">
-	        		<article class="result-tile">
-	        			
-	        			<h2>Nothing's Finer Than Being in Your Diner</h2>
-	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-	        		</article>
-	        	</a>
-	        </li>
-	        
-	        <li>
-	        	<a href="/document/">
-	        		<article class="result-tile">
-	        			
-	        			    <img src="http://lorempixel.com/300/200/business?3" alt="Yadda Yadda Yadda">
-	        			
-	        			<h2>Yadda Yadda Yadda</h2>
-	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-	        		</article>
-	        	</a>
-	        </li>
-	        
-	        <li>
-	        	<a href="/document/">
-	        		<article class="result-tile">
-	        			
-	        			<h2>You know what they say, ‘You don’t sell the steak, you sell the sizzle.’</h2>
-	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-	        		</article>
-	        	</a>
-	        </li>
-	        
-	        <li>
-	        	<a href="/document/">
-	        		<article class="result-tile">
-	        			
-	        			    <img src="http://lorempixel.com/300/200/business?4" alt="She’s one of those low-talkers. You can’t hear a word she’s saying! You’re always going ‘excuse me’, what was that?">
-	        			
-	        			<h2>She’s one of those low-talkers. You can’t hear a word she’s saying! You’re always going ‘excuse me’, what was that?</h2>
-	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-	        		</article>
-	        	</a>
-	        </li>
-	        
-	        <li>
-	        	<a href="/document/">
-	        		<article class="result-tile">
-	        			
-	        			<h2>I'm a US postal worker and my mail truck was just ambushed by a band of backwoods mail-hating survivalists</h2>
-	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-	        		</article>
-	        	</a>
-	        </li>
-	        
-	        <li>
-	        	<a href="/document/">
-	        		<article class="result-tile">
-	        			
-	        			<h2>You’re becoming one of the glitterati. What’s that? People who glitter.</h2>
-	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-	        		</article>
-	        	</a>
-	        </li>
-	        
-	        <li>
-	        	<a href="/document/">
-	        		<article class="result-tile">
-	        			
-	        			    <img src="http://lorempixel.com/300/200/business?1" alt="That's Pie Country. They Do a Lot of Baking Up There.">
-	        			
-	        			<h2>That's Pie Country. They Do a Lot of Baking Up There.</h2>
-	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-	        		</article>
-	        	</a>
-	        </li>
-	        
-	        <li>
-	        	<a href="/document/">
-	        		<article class="result-tile">
-	        			
-	        			    <img src="http://lorempixel.com/300/200/business?2" alt="What's the Deal with Airline Peanuts?">
-	        			
-	        			<h2>What's the Deal with Airline Peanuts?</h2>
-	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-	        		</article>
-	        	</a>
-	        </li>
-	        
-	        <li>
-	        	<a href="/document/">
-	        		<article class="result-tile">
-	        			
-	        			<h2>Nothing's Finer Than Being in Your Diner</h2>
-	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-	        		</article>
-	        	</a>
-	        </li>
-	        
-	        <li>
-	        	<a href="/document/">
-	        		<article class="result-tile">
-	        			
-	        			    <img src="http://lorempixel.com/300/200/business?3" alt="Yadda Yadda Yadda">
-	        			
-	        			<h2>Yadda Yadda Yadda</h2>
-	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-	        		</article>
-	        	</a>
-	        </li>
-	        
-	        <li>
-	        	<a href="/document/">
-	        		<article class="result-tile">
-	        			
-	        			<h2>You know what they say, ‘You don’t sell the steak, you sell the sizzle.’</h2>
-	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-	        		</article>
-	        	</a>
-	        </li>
-	        
-	        <li>
-	        	<a href="/document/">
-	        		<article class="result-tile">
-	        			
-	        			    <img src="http://lorempixel.com/300/200/business?4" alt="She’s one of those low-talkers. You can’t hear a word she’s saying! You’re always going ‘excuse me’, what was that?">
-	        			
-	        			<h2>She’s one of those low-talkers. You can’t hear a word she’s saying! You’re always going ‘excuse me’, what was that?</h2>
-	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-	        		</article>
-	        	</a>
-	        </li>
-	        
-	        <li>
-	        	<a href="/document/">
-	        		<article class="result-tile">
-	        			
-	        			<h2>I'm a US postal worker and my mail truck was just ambushed by a band of backwoods mail-hating survivalists</h2>
-	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-	        		</article>
-	        	</a>
-	        </li>
-	        
-	        <li>
-	        	<a href="/document/">
-	        		<article class="result-tile">
-	        			
-	        			    <img src="http://lorempixel.com/300/200/business?5" alt="You’re becoming one of the glitterati. What’s that? People who glitter.">
-	        			
-	        			<h2>You’re becoming one of the glitterati. What’s that? People who glitter.</h2>
-	        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab... <span class="read-more text-right">Read More <i class="fa fa-angle-right"></i></span></p>
-	        		</article>
-	        	</a>
-	        </li>
-	        
-	        </ul>
+	<!-- LOGIN PANEL -->
+	<div class="row">
+	    <div class="columns text-center">
 
-	    </div>
-	</div>
-</section>
+		    <form class="lv-login-panel animated fadeInDown" method="post" action="" data-abide novalidate>
 
-<!-- FOOTER -->
-<footer class="global-footer">
-    <p class="left">&copy; <strong>2015</strong> Thomson Reuters (Professional) Australia LTD</p>
-<p class="right"><a href="#">Read Me</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Credits</a></p>
+		    	<!-- Username -->
+		    	<div class="row collapse">
+		    		<div class="columns">
+		    			<label><span class="label-text"><i class="fi-torso"></i> Username</span>
+		    				<input name="username" class="radius username-field" type="text" maxlength="255" autocapitalize="off" required>
+		    			</label>
+		    			<small class="error">Your name is required.</small>
+		    		</div>
+		    	</div>
 
-</footer>
+		    	<!-- Password -->
+		    	<div class="row collapse">
+		    		<div class="columns">
+		    			<label><span class="label-text"><i class="fi-key"></i> Password</span>
+		    				<input name="password" class="radius password-field" type="password" autocapitalize="off" required>
+		    			</label>
+		    			<small class="error">Password is incorrect.</small>
+		    		</div>
+		    		<!-- Forgot? -->
+		    		<div class="text-right "><a class="forgot-password" href="#password-reset">Forgot?</a></div>
+		    	</div>
+
+		    	<!-- Remember Me -->
+		    	<div class="remember-me">
+					<div class="row collapse">
+						<div class="columns text-left">
+							<input id="remember-me" name="remember-me" type="checkbox"><label for="remember-me">Remember Me</label>
+						</div>
+					</div>
+				</div>
+
+		    	<!-- Submit -->
+				<div class="row">
+					<div class="columns">
+						<!-- Switch to button on production -->
+						<!-- <button type="submit" class="button radius expand">Login</button> -->
+						<a href="/home/" class="button medium radius expand">Login</a>
+					</div>
+				</div>
+		    </form>
+
+	    </div> <!-- .columns -->
+	</div> <!-- .row -->
+
+	<!-- FOOTER -->
+	<footer class="lv-login-footer">
+		<div class="row">
+			<div class="columns text-center">
+				<p><small>&copy; Thomson Reuters (Professional) Australia Limited 2000-2013<br> <strong>Phone</strong> <a href="(05) 555 555">(05) 555 555</a>&nbsp; <strong>Email</strong> <a href="test@example.com">test@example.com</a></small></p>
+			</div>
+		</div>
+	</footer>
+
+</section> <!-- .lv-login -->
 
         </div> <!-- .lv-page -->
     </div> <!-- .lv-super -->
@@ -419,7 +142,7 @@
 
     <!-- **** JAVASCRIPT **** -->
 
-    <script src="/assets/scripts/minified.ebb3.js"></script>
+    <script src="/assets/scripts/minified.ee74.js"></script>
 
     
 
