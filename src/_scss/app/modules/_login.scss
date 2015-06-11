@@ -1,14 +1,33 @@
 /*
-    MODULES.CSS
+	LOGIN.CSS
 */
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-//
+// Login Panel
 //-----------------------------------------------------------------
 
+.login-panel {
+	background: white;
+	padding: 0 20px 20px 20px;
+	border-radius: 5px;
 
+	@media #{$medium-up} {
+	    width: 400px;
+	    margin: 20px auto 0 auto;
+	}
+}
+
+.forgot-password {
+	font-size: 14px;
+}
+
+.label-text {
+	display: block;
+	padding-bottom: 10px;
+	font-size: 14px;
+}
 
 //=========================================
 //
