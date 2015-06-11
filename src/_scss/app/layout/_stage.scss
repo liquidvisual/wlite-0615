@@ -11,12 +11,28 @@
 .global-stage {
 	position: absolute;
 	top: 0;
-	left: $context-menu-width;
+	left: 0;
 	right: 0;
 	bottom: 0;
-	padding: rem-calc(10 20 20 20);
+	padding: rem-calc(10 10);
 	background: url(../img/template/westlaw-mark.svg) no-repeat center center;
 	background-size: 300px;
+
+	@media #{$medium-up} {
+	    left: $context-menu-width;
+	    padding: rem-calc(10 20 20 20);
+	}
+}
+
+.context-menu-is-hiding .global-stage {
+	@media #{$small-only} {
+	    padding-top: rem-calc(50);
+	}
+
+	@media #{$medium-up} {
+	    left: 60px;
+
+	}
 }
 
 //-----------------------------------------------------------------

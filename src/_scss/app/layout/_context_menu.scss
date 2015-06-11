@@ -13,12 +13,35 @@ $context-menu-width: rem-calc(400);
 // Context Menu Header
 //-----------------------------------------------------------------
 
+.context-menu, .stage {
+	@include transition('all');
+}
+
 .context-menu-header {
 	position: relative;
 	border-bottom: 1px solid $border-color;
 	height: $header-height-small;
 	line-height: $header-height-small;
+	background: white;
 	z-index: 10;
+}
+
+.context-menu-mobile-menu {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	border-left: 1px solid #E0E0E0;
+	padding-left: 20px;
+
+    i {
+    	font-size: rem-calc(20);
+    	display: inline-block;
+    	color: #E25854;
+    }
+}
+
+.context-menu-is-hiding .context-menu-mobile-menu i {
+	color: $primary-color;
 }
 
 //-----------------------------------------------------------------
@@ -33,13 +56,27 @@ $context-menu-width: rem-calc(400);
 	width: 100%;
 	bottom: 0;
 	border-right: 1px solid #D4D4D4;
-	background: white;
+	// background: white;
 	z-index: 1;
 	box-shadow: 11px 0px 10px -5px rgba(0,0,0,0.05);
+
+	// display: none;
+	// opacity: 0.5;
 
 	@media #{$medium-up} {
 	    width: $context-menu-width;
 	    bottom: $footer-height;
+	}
+}
+
+.context-menu-is-hiding .context-menu {
+	@media #{$small-only} {
+		bottom: auto;
+	}
+
+	@media #{$medium-up} {
+	    right: auto;
+	    left: -344px;
 	}
 }
 
@@ -58,6 +95,15 @@ $context-menu-width: rem-calc(400);
 	left: 0;
 	width: 100%;
 	height: 100vh;
+	background: white;
+}
+
+.context-menu-is-hiding .context-menu-fixed {
+	@media #{$small-only} {
+		right: auto;
+		left: 0;
+		display: none;
+	}
 }
 
 //-----------------------------------------------------------------
@@ -98,39 +144,6 @@ $context-menu-width: rem-calc(400);
 	}
 }
 
-//=========================================
-// Mobile Menu
-//=========================================
-
-.context-menu-mobile-menu {
-	position: absolute;
-	// top: 0;
-	// bottom: 0;
-	right: 20px;
-
-	// z-index: 9999999;
-	// // bottom: 20px;
-	// right: 15px;
-	top: calc(50% - 2px); // to account for top margins of H1s
-	-webkit-transform: translateY(-50%);
-	    -ms-transform: translateY(-50%);
-	        transform: translateY(-50%);
-}
-
-//=========================================
-// Hamburger
-//=========================================
-
-.hamburger {
-	@include hamburger($width: 22px, $gap: 5px, $thickness: 3px, $color: #211F20);
-
-	@media #{$medium-up} {
-		// @include hamburger($width: 28px, $gap: 6px, $thickness: 5px, $color: #211F20);
-	}
-
-	z-index: 9999;
-}
-
 //-----------------------------------------------------------------
 // Context Menu Buttons
 //-----------------------------------------------------------------
@@ -141,6 +154,7 @@ $context-menu-width: rem-calc(400);
 	width: 100%;
 	border-top: 1px solid #E0E0E0; //$border-color;
 	box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.05);
+	background: white;
 	z-index: 1;
 
 	.context-menu-btn {
@@ -164,13 +178,9 @@ $context-menu-width: rem-calc(400);
 	}
 }
 
-// .context-menu-btn {
-// 	// background: red;
-// 	position: absolute;
-// 	bottom: 0;
-// 	width: rem-calc(40);
-// 	height: rem-calc(40);
-// }
+.context-menu-is-hiding .context-menu-btn-wrapper {
+	display: none;
+}
 
 //=========================================
 //
