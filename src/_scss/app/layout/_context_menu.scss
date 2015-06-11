@@ -111,11 +111,18 @@ $context-menu-width: rem-calc(400);
 //-----------------------------------------------------------------
 
 .context-menu-search {
-	padding-bottom: 60%;
 	vertical-align: middle;
 	display: table-cell;
 
-	@media #{$medium-up} {
+	@media #{$small-only} {
+	    padding-bottom: 60%;
+	}
+
+	@media (min-height: 768px) {
+	    padding-bottom: 60%;
+	}
+
+	@media #{$medium-up} and (min-height: 768px) {
 	    padding-bottom: 90%;
 	}
 }

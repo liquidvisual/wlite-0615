@@ -1,0 +1,105 @@
+---
+layout: master
+---
+
+{% assign settings = site.data.settings %}
+
+<style>
+	.login-panel {
+		background: white;
+		padding: 0 20px 20px 20px;
+		border-radius: 5px;
+	}
+
+	@media (min-width: 641px) {
+		.login-panel {
+			width: 400px;
+			margin: 20px auto 0 auto;
+		}
+	}
+
+	.forgot-password {
+		font-size: 14px;
+	}
+
+	.label-text {
+		display: block;
+		padding-bottom: 10px;
+		font-size: 14px;
+	}
+</style>
+
+<section class="login-panel">
+
+	<!-- HEADER -->
+	<header class="lv-login-header">
+		<div class="row">
+			<div class="columns text-center">
+				<img src="/img/content/logo@2x.png">
+				<h1 class="subheader">Westlaw Lite</h1>
+			</div>
+		</div>
+	</header>
+
+	<br>
+
+	<!-- LOGIN PANEL -->
+	<div class="row">
+	    <div class="columns text-center">
+
+		    <form class="lv-login-panel animated fadeInDown" method="post" action="" data-abide novalidate>
+
+		    	<!-- Username -->
+		    	<div class="row collapse">
+		    		<div class="columns">
+		    			<label><span class="label-text"><i class="fi-torso"></i> Username</span>
+		    				<input name="username" class="radius username-field" type="text" maxlength="255" autocapitalize="off" required>
+		    			</label>
+		    			<small class="error">Your name is required.</small>
+		    		</div>
+		    	</div>
+
+		    	<!-- Password -->
+		    	<div class="row collapse">
+		    		<div class="columns">
+		    			<label><span class="label-text"><i class="fi-key"></i> Password</span>
+		    				<input name="password" class="radius password-field" type="password" autocapitalize="off" required>
+		    			</label>
+		    			<small class="error">Password is incorrect.</small>
+		    		</div>
+		    		<!-- Forgot? -->
+		    		<div class="text-right "><a class="forgot-password" href="#password-reset">Forgot?</a></div>
+		    	</div>
+
+		    	<!-- Remember Me -->
+		    	<div class="remember-me">
+					<div class="row collapse">
+						<div class="columns text-left">
+							<input id="remember-me" name="remember-me" type="checkbox"><label for="remember-me">Remember Me</label>
+						</div>
+					</div>
+				</div>
+
+		    	<!-- Submit -->
+				<div class="row">
+					<div class="columns">
+						<!-- Switch to button on production -->
+						<!-- <button type="submit" class="button radius expand">Login</button> -->
+						<a href="/home/" class="button medium radius expand">Login</a>
+					</div>
+				</div>
+		    </form>
+
+	    </div> <!-- .columns -->
+	</div> <!-- .row -->
+
+	<!-- FOOTER -->
+	<footer class="lv-login-footer">
+		<div class="row">
+			<div class="columns text-center">
+				<p><small>&copy; Thomson Reuters (Professional) Australia Limited 2000-2013<br> <strong>Phone</strong> <a href="{{ settings.phone }}">{{ settings.phone }}</a>&nbsp; <strong>Email</strong> <a href="{{ settings.email }}">{{ settings.email }}</a></small></p>
+			</div>
+		</div>
+	</footer>
+
+</section> <!-- .lv-login -->

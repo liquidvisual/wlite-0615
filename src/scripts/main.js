@@ -61,8 +61,8 @@ startMasonry();
 $(document).keypress(function(event) {
     if (event.which == 115 && (event.ctrlKey||event.metaKey)||(event.which == 19)) {
         event.preventDefault();
-        $('body').toggleClass('legacy-theme');
-        // alert("(w) "+$(window).width()+" (h) "+$(window).height());
+        // $('body').toggleClass('legacy-theme');
+        alert("(w) "+$(window).width()+" (h) "+$(window).height());
         return false;
     }
     return true;
