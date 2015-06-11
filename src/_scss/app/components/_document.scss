@@ -11,11 +11,15 @@
 .global-stage-document {
 	background: white;
 	margin: 20px auto;
-	padding: rem-calc(30);
+	padding: rem-calc(20);
 	border-radius: rem-calc(5);
 	overflow: hidden; // necessary
 	max-width: rem-calc(1040);
 	border-top: 25px solid $primary-color;
+
+	@media #{$medium-up} {
+	    padding: rem-calc(30);
+	}
 }
 
 //-----------------------------------------------------------------
