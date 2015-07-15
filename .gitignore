@@ -34,6 +34,6 @@ Thumbs.db
 
 # Ignore for Yeoman-Jekyll projects #
 dist
-node_modules
 src/_bower_components
+node_modules
 .tmp
